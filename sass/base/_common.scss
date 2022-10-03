@@ -1,0 +1,46 @@
+body {
+    background-color: $main-color;
+    font-family: $font-family-main;
+    color: $main-text-color;
+    letter-spacing: $letter-spacing-common;
+    font-size: $font-1;
+  }
+
+  .container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .input-cursor {
+    cursor: pointer; 
+  }
+
+  .logo-studio,
+  .logo-web,
+  .logo-studio-light {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .logo-studio {
+    color: var(--logo-studio-color);
+
+    &-dark {
+      color: var(--main-color);}
+
+  }
+  
+  .logo-web {
+    color: var(--blue-color);
+  }
+
+  .studio-section-name {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 50px;
+  }

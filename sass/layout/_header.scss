@@ -1,0 +1,88 @@
+.header {
+    font-weight: $font-weight-500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 24.5px;
+    padding-bottom: 24.5px;
+  }
+  
+  .header_nav-list {
+    margin-left: 93px;
+  }
+  
+  .header_nav-list {
+    display: inline-flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .header_nav-link-current,
+  .header_nav-link {
+    line-height: $line-h-header;
+    letter-spacing: $letter-spacing-header-link;
+  }
+  
+  .header_nav-link {
+    color: $main-text-color;
+    transition: color $transition-timing;
+
+    &:visited {
+        color: $main-text-color;
+    }
+
+    &:hover,
+    &:focus,
+    &:visited:hover,
+    &:visited:focus {
+      color: $blue-color;
+    }
+}
+  
+  .header_nav-link-current {
+    color: $blue-color;
+    position: relative;
+  
+    &::after {
+        content: "";
+        position: absolute;
+        top: 45px;
+        right: 0;
+        width: 100%;
+        border-bottom: solid 4px $blue-color;
+        border-radius: 2px;
+    }
+  }
+  
+  .header_contacts-list {
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: auto;
+  }
+  
+  .header_contacts-item {
+    background-color: $main-color;
+    color: $text-gray-color;
+    cursor: pointer;
+  }
+  
+  .header_contacts-item-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: $text-gray-color;
+    line-height: $line-h-header;
+    letter-spacing: $letter-spacing-header-link;
+    font-weight: $font-weight-500;
+    transition: color $transition-timing;
+
+    &:hover,
+    &:focus {
+      color: $blue-color;
+    }
+  }
+  
+  .header_contacts-icon {
+    fill: currentColor;
+  }

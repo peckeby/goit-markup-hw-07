@@ -1,0 +1,19 @@
+// util
+@import 'utils/variables';
+@import 'utils/visually-hidden';
+@import 'utils/placeholder';
+
+// base
+@import 'base/common';
+@import 'base/reset';
+
+// LAYOUT
+@import 'layout/header';
+@import 'layout/order-section';
+
+//components
+@import 'components/btn-submit';
+@import 'components/modal-form-checkbox-policy';
+@import 'components/modal-form-inputs';
+@import 'components/modal-form';
+@import 'components/modal'

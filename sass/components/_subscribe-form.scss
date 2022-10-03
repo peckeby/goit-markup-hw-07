@@ -1,0 +1,46 @@
+.footer-subscribe {
+    margin-left: auto;
+  }
+
+  .footer-subscribe__label {
+    display: block;
+  }
+
+  .footer-subscribe__input,
+  .footer-subscribe__input:placeholder-shown:required:invalid {
+    width: 358px;
+    height: 50px;
+    border: var(--border-footer-form);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 15px 16px;
+    margin-right: 12px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--main-color);
+  }
+
+  .footer-subscribe__input:required:invalid {
+    border-color: red;
+  }
+
+  .footer-subscribe__input:required:valid {
+    border-color: green;
+  }
+
+  .footer-subscribe__btn {
+    display: inline-flex;
+    gap: 10px;
+    box-shadow: var(--box-shadow-submit-btn);
+    border-radius: 4px;
+    transition: var(--transition-timing);
+  }
+
+  .footer-subscribe__icon {
+    fill: currentColor;
+  }
+
+  .footer-subscribe__btn:hover,
+  .footer-subscribe__btn:focus {
+    transform: scale(1.07);
+  }

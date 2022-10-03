@@ -1,0 +1,23 @@
+.btn-submit {
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    line-height: 1.875;
+    background-color: var(--blue-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.25s;
+    display: inline;
+    align-items: center;
+    padding: 10px 32px;
+    transition: var(--transition-timing);
+  
+    &:hover,
+    &:focus {
+        color: var(--blue-color);
+        background-color: var(--main-color); 
+        transform: var(--btn-transform);
+     } 
+  }

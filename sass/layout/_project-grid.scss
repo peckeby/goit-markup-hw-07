@@ -1,0 +1,64 @@
+.projects {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 0;
+  }
+  
+  .projects_item {
+    display: block;
+    transition: box-shadow var(--transition-timing);
+  }
+  
+  .projects_item-link:hover,
+  .projects_item-link:focus {
+    box-shadow: var(--project-hover-shadow);
+  }
+
+  .projects_item-image {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .projects_item-link:hover .projects_item-overlay,
+  .projects_item-link:focus .projects_item-overlay {
+    transform: translatey(-100%);
+  }
+  
+  .projects_item-overlay {
+    position: absolute;
+    transform: translatey(0);
+    width: 100%;
+    height: 294px;
+    padding: 63px 24px;
+    background-color: var(--porfolio-card-overlay);
+    transition: transform var(--transition-timing);
+  }
+  
+  .projects_item-overlay-info {
+    color: var(--main-color);
+    font-size: 18px;
+    line-height: 1.55;
+  }
+  
+  .projects_item-info{
+    border-left: var(--border-project-card);
+    border-right: var(--border-project-card);
+    border-bottom: var(--border-project-card);
+    padding: 20px 24px;
+  }
+  
+  .projects_item-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+  
+  .projects_item-type {
+    font-size: 16px;
+    color: var(--text-gray-color);
+    line-height: 1.875;
+  }

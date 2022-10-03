@@ -1,0 +1,21 @@
+.footer_media-links {
+    margin-left: 70px;
+  }
+  
+  .footer_media-links-title {
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.18;
+  }
+  
+  .link-media-footer {
+    background-color: var(--background-color-icons);
+    color: var(--main-color);
+  }
+  
+  .footer-icons {
+    display: flex;
+    gap: 10px;
+  }

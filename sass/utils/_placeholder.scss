@@ -1,0 +1,35 @@
+%list {
+    list-style: none;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-inline-start: 0px;
+    padding-left: 0;
+}
+
+%section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+%input,
+%icon-link {
+  outline: transparent;
+}
+
+%button {
+  border: none;
+  cursor: pointer;
+  }
+
+%link {
+  text-decoration: none;
+  color: currentColor;
+  outline: transparent;
+
+}
+
+%icon-link {
+  text-decoration: none;
+  color: currentColor;
+}

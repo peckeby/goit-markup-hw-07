@@ -1,0 +1,27 @@
+.what-we-do {
+    padding-top: 0;
+  }
+
+  .what-we-do_img-list {
+    display: inline-flex;
+    column-gap: 30px;
+  }
+  
+  .what-we-do_img-item {
+    position: relative;
+  }
+  
+  .what-we-do_img-label {
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    bottom: 0;    
+    background: rgba(47, 48, 58, 0.8);
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-weight: 700;
+    line-height: 1.142;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
