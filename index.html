@@ -9,7 +9,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,27 +20,28 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css"/>
   </head>
   <body>
     <header>
       <div class="container header">
-        <a href="./index.html" class="link logo-studio"><span class="logo-web">Web</span>Studio</span></a>
+        <a href="./index.html" class="logo-studio"><span class="logo-web">Web</span>Studio</span></a>
         <nav class="header_nav">
-          <ul class="list header_nav-list">
+          <ul class="header_nav-list">
             <li>
-              <a href="./index.html" class="link header_nav-link-current">Студія</a>
+              <a href="./index.html" class="header_nav-link-current">Студія</a>
             </li>
             <li>
-              <a href="./portfolio.html" class="link header_nav-link">Портфоліо</a>
+              <a href="./portfolio.html" class="header_nav-link">Портфоліо</a>
             </li>
             <li>
-              <a href="#" class="link header_nav-link">Контакти</a>
+              <a href="#" class="header_nav-link">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="list header_contacts-list">
+        <ul class="header_contacts-list">
           <li class="header_contacts-item">
-            <a href="mailto:info@devstudio.com" class="link header_contacts-item-link">
+            <a href="mailto:info@devstudio.com" class="header_contacts-item-link">
               <svg role="img" width="16px" height="12px" class="header_contacts-icon">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -49,7 +49,7 @@
             </a>
           </li>
           <li class="header_contacts-item">
-            <a href="tel:+380961111111" class="link header_contacts-item-link">
+            <a href="tel:+380961111111" class="header_contacts-item-link">
               <svg role="img" width="12px" height="16px" class="header_contacts-icon">
                 <use href="./images/icons.svg#icon-mobile"></use>
               </svg>
@@ -63,10 +63,10 @@
       <section class="order">
         <div class="animate__animated animate__fadeInDown container">
           <h1 class="order_h1">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="input btn-submit js-open-modal" data-modal="1">Замовити послугу</button>
+          <button type="button" class="btn-submit js-open-modal" data-modal="1">Замовити послугу</button>
         </div>
         <div class="modal" data-modal="1">
-          <button class="input modal_btn-close js-modal-close">
+          <button class="modal_btn-close js-modal-close">
             <svg role="img" width="18px" height="18px" class="modal_icon-close-window">
               <use href="./images/icons.svg#icon-close-button"></use>
             </svg>
@@ -82,7 +82,7 @@
                     <input 
                       id="user-name"
                       type="text"
-                      class="input form_label-input"
+                      class="form_label-input"
                       name="username" 
                       placeholder="Андрій"
                       required
@@ -103,7 +103,7 @@
                     <input 
                       id="user-tel"
                       type="tel"
-                      class="input form_label-input"
+                      class="form_label-input"
                       name="user_phone"
                       placeholder="+38 099 999 99 99"
                       data-mask
@@ -122,7 +122,7 @@
                     <input 
                       id="user-mail"
                       type="email"
-                      class="input form_label-input"
+                      class="form_label-input"
                       name="user_mail"
                       placeholder="andriy@mail.com"
                       required
@@ -136,7 +136,7 @@
                 <div class="form_label form_comment">
                     <label>
                       <span class="form_label-title">Коментар</span>
-                      <textarea name="comment" class="input form_label-input form_label-textarea" rows="5" placeholder="Введіть текст"></textarea>
+                      <textarea name="comment" class="form_label-input form_label-textarea" rows="5" placeholder="Введіть текст"></textarea>
                     </label>
                 </div>
                 <label class="form_checkbox-policy">
@@ -150,17 +150,17 @@
                       <use class="checkbox-icon-checked" href="./images/icons.svg#icon-checked"></use>
                     </svg>
                     <span class="checkbox-agreement-text">Погоджуюся з розсилкою та приймаю 
-                      <a href="#" class="link checkbox-agreement-link">Умови договору</a>
+                      <a href="#" class="checkbox-agreement-link">Умови договору</a>
                     </span>
                 </label>
-              <button type="submit" class="input btn-submit checkbox-btn-submit">Відправити</button>
+              <button type="submit" class="checkbox-btn-submit">Відправити</button>
             </form>
         </div>
       </section>
-      <section class="section advantages">
+      <section class="advantages-section">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
-            <ul class="list advantages_list">
+            <ul class="advantages_list">
               <li class="advantages_item aos-init aos-animate" data-aos="flip-left" data-aos-delay="300">
                 <div class="advantages_item-icon">
                   <svg width="70px" height="70px">
@@ -210,10 +210,10 @@
             </ul>
         </div>
       </section>
-      <section class="section what-we-do">
+      <section class="what-we-do">
         <div class="container">
         <h2 class="studio-section-name">Чим ми займаємося</h2>
-          <ul class="list what-we-do_img-list">
+          <ul class="what-we-do_img-list">
             <li class="what-we-do_img-item aos-init aos-animate" data-aos="zoom-in-down" data-aos-delay="200">
               <img
                 src="./images/img_main_1.jpg"
@@ -244,10 +244,10 @@
           </ul>
         </div>
       </section>
-      <section class="section our-team">
+      <section class="our-team">
         <div class="container">
           <h2 class="studio-section-name">Наша команда</h2>
-          <ul class="list our-team_card-list">
+          <ul class="our-team_card-list">
             <li class="our-team_card">
               <img
                 src="./images/team_igor.jpg"
@@ -258,8 +258,8 @@
               <div class="our-team_card-info">
                 <h3 class="our-team_card-name">Ігор Дем'яненко</h3>
                 <p class="our-team_card-position">Product Designer</p>
-                <ul class="list icons-media-list">
-                  <li class="list media-button">
+                <ul class="icons-media-list">
+                  <li class="media-button">
                     <a href="https://www.instagram.com/" class="icon-link link-media">
                       <svg class="icon-item"
                         role="img" 
@@ -270,7 +270,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="list media-button">
+                  <li class="media-button">
                     <a href="https://twitter.com/?lang=en" class="icon-link link-media">
                     <svg class="icon-item"
                     role="img" 
@@ -281,7 +281,7 @@
                     </svg>
                     </a>
                   </li>
-                  <li class="list media-button">
+                  <li class="media-button">
                     <a href="https://www.facebook.com/" class="icon-link link-media">
                     <svg class="icon-item"
                       role="img" 
@@ -292,7 +292,7 @@
                     </svg>
                     </a>
                   </li>
-                  <li class="list media-button">
+                  <li class="media-button">
                     <a href="https://www.linkedin.com/" class="icon-link link-media">
                     <svg class="icon-item"
                       role="img" 
@@ -316,9 +316,9 @@
               <div class="our-team_card-info">
                 <h3 class="our-team_card-name">Ольга Рєпіна</h3>
                 <p class="our-team_card-position">Frontend Developer</p>
-                <ul class="list icons-media-list">
-                  <li class="list media-button">
-                    <a href="https://www.instagram.com/" class="icon-link link-media">
+                <ul class="icons-media-list">
+                  <li class="media-button">
+                    <a href="https://www.instagram.com/" class="link-media">
                       <svg class="icon-item"
                         role="img" 
                         width="20px" 
@@ -328,8 +328,8 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="list media-button">
-                    <a href="https://twitter.com/?lang=en" class="icon-link link-media">
+                  <li class="media-button">
+                    <a href="https://twitter.com/?lang=en" class="link-media">
                     <svg class="icon-item"
                     role="img" 
                     width="20px" 
@@ -339,8 +339,8 @@
                     </svg>
                     </a>
                   </li>
-                  <li class="list media-button">
-                    <a href="https://www.facebook.com/" class="icon-link link-media">
+                  <li class="media-button">
+                    <a href="https://www.facebook.com/" class="link-media">
                     <svg class="icon-item"
                       role="img" 
                       width="20px" 
@@ -350,8 +350,8 @@
                     </svg>
                     </a>
                   </li>
-                  <li class="list media-button">
-                    <a href="https://www.linkedin.com/" class="icon-link link-media">
+                  <li class="media-button">
+                    <a href="https://www.linkedin.com/" class="link-media">
                     <svg class="icon-item"
                       role="img" 
                       width="20px" 
@@ -374,9 +374,9 @@
               <div class="our-team_card-info">
                 <h3 class="our-team_card-name">Микола Тарасов</h3>
                 <p class="our-team_card-position">Marketing</p>
-                <ul class="list icons-media-list">
-                  <li class="list media-button">
-                    <a href="https://www.instagram.com/" class="icon-link link-media">
+                <ul class="icons-media-list">
+                  <li class="media-button">
+                    <a href="https://www.instagram.com/" class="link-media">
                       <svg class="icon-item"
                         role="img" 
                         width="20px" 
@@ -386,8 +386,8 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="list media-button">
-                    <a href="https://twitter.com/?lang=en" class="icon-link link-media">
+                  <li class="media-button">
+                    <a href="https://twitter.com/?lang=en" class="link-media">
                     <svg class="icon-item"
                     role="img" 
                     width="20px" 
@@ -397,8 +397,8 @@
                     </svg>
                     </a>
                   </li>
-                  <li class="list media-button">
-                    <a href="https://www.facebook.com/" class="icon-link link-media">
+                  <li class="media-button">
+                    <a href="https://www.facebook.com/" class="link-media">
                     <svg class="icon-item"
                       role="img" 
                       width="20px" 
@@ -408,8 +408,8 @@
                     </svg>
                     </a>
                   </li>
-                  <li class="list media-button">
-                    <a href="https://www.linkedin.com/" class="icon-link link-media">
+                  <li class="media-button">
+                    <a href="https://www.linkedin.com/" class="link-media">
                     <svg class="icon-item"
                       role="img" 
                       width="20px" 
@@ -432,9 +432,9 @@
               <div class="our-team_card-info">
                 <h3 class="our-team_card-name">Михайло Єрмаков</h3>
                 <p class="our-team_card-position">UI Designer</p>
-                <ul class="list icons-media-list">
-                  <li class="list media-button">
-                    <a href="https://www.instagram.com/" class="icon-link link-media">
+                <ul class="icons-media-list">
+                  <li class="media-button">
+                    <a href="https://www.instagram.com/" class="link-media">
                       <svg class="icon-item"
                         role="img" 
                         width="20px" 
@@ -444,8 +444,8 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="list media-button">
-                    <a href="https://twitter.com/?lang=en" class="icon-link link-media">
+                  <li class="media-button">
+                    <a href="https://twitter.com/?lang=en" class="link-media">
                     <svg class="icon-item"
                     role="img" 
                     width="20px" 
@@ -455,8 +455,8 @@
                     </svg>
                     </a>
                   </li>
-                  <li class="list media-button">
-                    <a href="https://www.facebook.com/" class="icon-link link-media">
+                  <li class="media-button">
+                    <a href="https://www.facebook.com/" class="link-media">
                     <svg class="icon-item"
                       role="img" 
                       width="20px" 
@@ -466,8 +466,8 @@
                     </svg>
                     </a>
                   </li>
-                  <li class="list media-button">
-                    <a href="https://www.linkedin.com/" class="icon-link link-media">
+                  <li class="media-button">
+                    <a href="https://www.linkedin.com/" class="link-media">
                     <svg class="icon-item"
                       role="img" 
                       width="20px" 
@@ -483,12 +483,12 @@
           </ul>
         </div>
       </section>
-      <section class="section partners">
+      <section class="partners">
         <div class="container">
           <h2 class="studio-section-name">Постійні клієнти</h2>
-          <ul class="list partners_list">
-            <li class="list partners_item">
-                <a href="#" class="icon-link partners_item-link">
+          <ul class="partners_list">
+            <li class="partners_item">
+                <a href="#" class="partners_item-link">
                   <svg 
                     width="106px"
                     height="60px"
@@ -498,8 +498,8 @@
                   </svg>
                 </a>
             </li>
-            <li class="list partners_item">
-                <a href="#" class="icon-link partners_item-link">
+            <li class="partners_item">
+                <a href="#" class="partners_item-link">
                   <svg 
                     width="106px"
                     height="60px"
@@ -509,8 +509,8 @@
                   </svg>
                 </a>
             </li>
-            <li class="list">
-                <a href="#" class="icon-link partners_item-link">
+            <li class="partners_item">
+                <a href="#" class="partners_item-link">
                   <svg 
                     width="106px"
                     height="60px"
@@ -520,8 +520,8 @@
                   </svg>
                 </a>
             </li>
-            <li class="list">
-                <a href="#" class="icon-link partners_item-link">
+            <li class="partners_item">
+                <a href="#" class="partners_item-link">
                   <svg 
                     width="106px"
                     height="60px"
@@ -531,8 +531,8 @@
                   </svg>
                 </a>
             </li>
-            <li class="list">
-                <a href="#" class="icon-link partners_item-link">
+            <li class="partners_item">
+                <a href="#" class="partners_item-link">
                   <svg 
                     width="106px"
                     height="60px"
@@ -542,8 +542,8 @@
                   </svg>
                 </a>
             </li>
-            <li class="list">
-                <a href="#" class="icon-link partners_item-link">
+            <li class="partners_item">
+                <a href="#" class="partners_item-link">
                   <svg 
                     width="106px"
                     height="60px"
@@ -558,28 +558,28 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer_container">
+      <div class="footer_container">
         <div>
-          <a href="./index.html" class="link logo-web footer-logo">Web<span class="logo-studio-dark">Studio</span></a>
+          <a href="./index.html" class="logo-web">Web<span class="logo-studio-dark">Studio</span></a>
           <address class="footer_address">
-            <ul class="list">
+            <ul class="footer_adress-list">
               <li class="footer_address-item">
-                <a href="https://goo.gl/maps/tvAfN8rbNp5ujhR58" class="link footer_address-link">м. Київ, пр-т Лесі Українки, 26</a>
+                <a href="https://goo.gl/maps/tvAfN8rbNp5ujhR58" class="footer_address-link">м. Київ, пр-т Лесі Українки, 26</a>
               </li>
               <li class="footer_address-item">
-                <a href="mailto:info@devstudio.com" class="link footer_address-contact">info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com" class="footer_address-contact">info@devstudio.com</a>
               </li>
               <li>
-                <a href="tel:+380961111111" class="link footer_address-contact">+38 096 111 11 11</a>
+                <a href="tel:+380961111111" class="footer_address-contact">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
         <div class="footer_media-links">
           <p class="footer_media-links-title">Приєднуйтесь</p>
-            <ul class="list footer-icons">
-              <li class="list media-button">
-                <a href="https://www.instagram.com/" class="icon-link link-media link-media-footer">
+            <ul class="footer-icons">
+              <li class="media-button">
+                <a href="https://www.instagram.com/" class="link-media-footer">
                   <svg class="icon-item"
                     width="20px" 
                     height="20px" 
@@ -588,8 +588,8 @@
                   </svg>
                 </a>
               </li>
-              <li class="list media-button">
-                <a href="https://twitter.com/?lang=en" class="icon-link link-media link-media-footer">
+              <li class="media-button">
+                <a href="https://twitter.com/?lang=en" class="link-media-footer">
                 <svg class="icon-item"
                 width="20px" 
                 height="20px" 
@@ -598,8 +598,8 @@
                 </svg>
                 </a>
               </li>
-              <li class="list media-button">
-                <a href="https://www.facebook.com/" class="icon-link link-media link-media-footer">
+              <li class="media-button">
+                <a href="https://www.facebook.com/" class="link-media-footer">
                   <svg class="icon-item"
                     width="20px" 
                     height="20px" 
@@ -608,8 +608,8 @@
                   </svg>
                 </a>
               </li>
-              <li class="list media-button">
-                <a href="https://www.linkedin.com/" class="icon-link link-media link-media-footer">
+              <li class="media-button">
+                <a href="https://www.linkedin.com/" class="link-media-footer">
                   <svg class="icon-item"
                     width="20px" 
                     height="20px" 
@@ -622,16 +622,17 @@
         </div>
         <div class="footer-subscribe">
           <form>
-            <label class="footer_media-links-title footer-subscribe__label">
+            <label class="footer-subscribe__label">
               Підпишіться на розсилку
             </label>
             <input 
               type="email" 
-              class="input footer-subscribe__input"
+              class="footer-subscribe__input"
               placeholder="E-mail"
               required
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-            <button type="submit" class="input btn-submit footer-subscribe__btn">Підписатися
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              minlength="7">
+            <button type="submit" class="footer-subscribe__btn">Підписатися
               <svg width="24px" height="24px" class="footer-subscribe__icon">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>

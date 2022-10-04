@@ -3,11 +3,13 @@
   }
 
   .footer-subscribe__label {
+    @extend %media-links-title;
     display: block;
   }
 
   .footer-subscribe__input,
   .footer-subscribe__input:placeholder-shown:required:invalid {
+    @extend %input;
     width: 358px;
     height: 50px;
     border: var(--border-footer-form);
@@ -15,20 +17,22 @@
     background-color: transparent;
     padding: 15px 16px;
     margin-right: 12px;
-    font-size: 16px;
-    line-height: 1.25;
+    font-size: var(--font-team-name);
+    line-height: var(--line-h-footer-form);
     color: var(--main-color);
   }
 
   .footer-subscribe__input:required:invalid {
-    border-color: red;
+    border-color: var(--border-color-invalid);
   }
 
   .footer-subscribe__input:required:valid {
-    border-color: green;
+    border-color: var(--border-color-valid);
   }
 
   .footer-subscribe__btn {
+    @extend .btn-submit;
+    @extend %input;    
     display: inline-flex;
     gap: 10px;
     box-shadow: var(--box-shadow-submit-btn);

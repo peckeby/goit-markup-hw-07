@@ -1,9 +1,9 @@
 body {
-    background-color: $main-color;
-    font-family: $font-family-main;
-    color: $main-text-color;
-    letter-spacing: $letter-spacing-common;
-    font-size: $font-1;
+    background-color: var(--main-color);
+    font-family: var(--font-family-main);
+    color: var(--main-text-color);
+    letter-spacing: var(--letter-spacing-common);
+    font-size: var(--font-common);
   }
 
   .container {
@@ -19,18 +19,20 @@ body {
   .logo-studio,
   .logo-web,
   .logo-studio-light {
+    @extend %link;
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
+    font-weight: var(--font-weight-logo);
+    font-size: var(--font-logo);
+    line-height: calc(31/26);
   }
 
   .logo-studio {
     color: var(--logo-studio-color);
 
     &-dark {
-      color: var(--main-color);}
-
+      @extend %link;
+      color: var(--main-color);
+    }
   }
   
   .logo-web {
@@ -39,8 +41,8 @@ body {
 
   .studio-section-name {
     text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
+    font-weight: var(--font-weight-logo);
+    font-size: var(--font-studio-section-name);
+    line-height: var(--line-h-studio-section-name);
     margin-bottom: 50px;
   }

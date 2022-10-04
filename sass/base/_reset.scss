@@ -7,7 +7,7 @@
   h5,
   h6 {
     margin: 0;
-    font-size: $font-1;
+    font-size: var(--font-common);
   }
 
   img {
@@ -16,5 +16,7 @@
     height: auto;
   }
   
- 
-  
+  button {
+    border: none;
+    cursor: pointer;
+    }

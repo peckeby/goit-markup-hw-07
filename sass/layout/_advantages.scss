@@ -1,5 +1,10 @@
+.advantages-section {
+  @extend %section;
+}
+
 .advantages_list {
     display: flex;
+    @extend %list;
   }
 
   .advantages_item:not(:last-child) {
@@ -14,16 +19,15 @@
   }  
 
   .advantages_item-name {
-    font-weight: 700;
+    font-weight: var(--font-weight-order-h1);
     line-height: 1.2;
     text-transform: uppercase;
     margin: 0;
   }
   
   .advantages_item-info {
-    font-size: 14px;
     color: var(--text-gray-color);
-    line-height: 1.8;
+    line-height: var(--line-h-checkbox-agreement);
     margin-bottom: 0;
     margin-top: 10px;
   }

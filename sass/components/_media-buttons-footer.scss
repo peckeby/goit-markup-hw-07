@@ -3,19 +3,24 @@
   }
   
   .footer_media-links-title {
-    text-transform: uppercase;
-    color: var(--main-color);
-    margin-bottom: 20px;
-    font-weight: 700;
-    line-height: 1.18;
+    @extend %media-links-title;
   }
   
   .link-media-footer {
+    @extend %icon-link;
+    @extend %link-media;
     background-color: var(--background-color-icons);
     color: var(--main-color);
+
+    &:hover,
+    &:focus {
+        color: var(--main-color);
+        background: var(--blue-color);
+      }
   }
   
   .footer-icons {
+    @extend %list;
     display: flex;
     gap: 10px;
   }

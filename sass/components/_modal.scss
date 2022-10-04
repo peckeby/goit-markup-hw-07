@@ -47,6 +47,7 @@
  }
   
   .modal_btn-close {
+    @extend %input;
     position: absolute;
     display: flex;
     align-items: center;
@@ -55,7 +56,7 @@
     height: 30px;
     color: var(--logo-studio-color);
     background-color: var(--main-color);
-    border: solid 1px rgba(0, 0, 0, 0.1);
+    border: var(--border-modal-btn);
     border-radius: 50%;
     padding: 6px;
     top: 8px;
